@@ -1,0 +1,37 @@
+.heroes {
+  display: flex;
+  justify-content: space-between;
+  &__container {
+    width: 30%;
+  }
+  &__details {
+    width: 70%;
+  }
+  .list {
+    padding: 0;
+    .item {
+      margin: 5px 0;
+      border-radius: 5px;
+      list-style: none;
+      border: 1px solid #369;
+      transition: .3s;
+      &--selected {
+        background-color: #369;
+        color: #fff;
+      }
+      &:hover {
+        background-color: #369;
+        color: #fff;
+        cursor: pointer;
+      }
+      &__badge {
+        background-color: #369;
+        color: #fff;
+        padding: 5px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
