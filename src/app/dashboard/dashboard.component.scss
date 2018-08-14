@@ -1,0 +1,25 @@
+.dashboard {
+  border: 3px solid #369;
+  width: 400px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  &__hero {
+    margin: 5px;
+    width: 25%;
+    display: inline-block;
+    background-color: #369;
+    color: #fff;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      background-color: darken(#369, 10%);
+    }
+  }
+}
