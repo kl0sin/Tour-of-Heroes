@@ -126,7 +126,7 @@
   "defaultProject": "Tour-of-Heroes",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scs"
+      "styleext": "scss"
     }
   }
 }
