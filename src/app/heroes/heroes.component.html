@@ -10,8 +10,22 @@
         <span class="item__hero">
           {{ hero.name }}
         </span>
+        <button class="heroes__delete"
+                (click)="remove(hero)">
+          X
+        </button>
       </li>
     </ul>
+  </div>
+  <div class="heroes__container heroes__container--new">
+    <div>
+      <label>
+        Hero name:
+        <input #heroName/>
+      </label>
+      <button class="heroes__add"
+              (click)="add(heroName.value); heroName.value = ''">Add new hero</button>
+    </div>
   </div>
   <app-hero-detail></app-hero-detail>
 </div>
