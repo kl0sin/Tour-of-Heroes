@@ -1,5 +1,8 @@
 <div class="dashboard">
-  <div class="dashboard__hero" *ngFor="let hero of heroes | slice:0:6;" routerLink="/detail/{{ hero.id }}">
+  <div class="dashboard__hero"
+       *ngFor="let hero of heroes | slice:0:6;"
+       routerLink="/detail/{{ hero.id }}">
     {{ hero.name }}
   </div>
 </div>
+<app-hero-search></app-hero-search>

@@ -1,0 +1,35 @@
+.search {
+  border: 2px solid #369;
+  border-radius: 5px;
+  padding: 0 15px 15px;
+  width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  &__results {
+    list-style: none;
+    padding: 0;
+    a {
+      color: #444;
+      box-sizing: border-box;
+      background-color: #fff;
+      transition: .3s;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: block;
+      width: 100%;
+      padding: 10px 5px;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        background-color: #369;
+        cursor: pointer;
+      }
+    }
+  }
+}
